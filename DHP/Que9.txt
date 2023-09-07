@@ -1,0 +1,12 @@
+sqlite> create table Employee(Eno number primary key,Ename text,Desg text,Salary number,City text,Email text);  
+sqlite> create trigger emp_trigger before insert on Employee
+   ...> begin
+   ...>         select
+   ...>                 case
+   ...>                         when new.Email not like '%@gmail.com' then
+   ...>                                 raise(abort,'Invalid Email')
+   ...>                 end;
+   ...> end;
+sqlite> insert into Employee values (1,'Jay','Head',20000,'Surat','123'); 
+Runtime error: Invalid Email (19)
+sqlite> insert into Employee values (1,'Jay','Head',20000,'Surat','123@gmail.com');

@@ -1,0 +1,8 @@
+sqlite>.open Collage.db
+sqlite>CREATE TABLE Employee (E_ID number primary key,Name text,Dob date,Designation text, Salary real);
+sqlite>INSERT INTO Employee VALUES (1,'Jay','25-Jun-2005','Developer',20000.0),(2,'Vivek','15-Apr-2005','Designer',23000.0),
+(3,'Parth','18-Aug-2004','Head',25000.0);
+sqlite>.output emp.csv
+sqlite>.dump Employee
+sqlite>.output emp1.csv
+sqlite>.dump

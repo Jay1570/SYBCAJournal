@@ -1,0 +1,7 @@
+sqlite> .open sales.db
+sqlite> create table Sales(sid number primary key,year number,totalsales number);
+sqlite> insert into Sales values(1,2010,30000),(2,2012,34000),(3,2012,32000),(4,2014,37000),(5,2016,45000),(6,2010,33000);
+sqlite> .mode csv
+sqlite> .output sales.csv
+sqlite> .header on
+sqlite> select * from Sales;

@@ -1,0 +1,5 @@
+sqlite> create table Product (prod_id number primary key, prod_name text, price real, qty number,total_amount real); 
+sqlite> .mode csv
+sqlite> .import product.csv Product
+sqlite> .output prod.csv
+sqlite> select * from Product;
