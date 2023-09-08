@@ -1,0 +1,4 @@
+/*Create a base class shape use the class two store double type value that could be 
+used to compare the area. A drive to specific classes called triangle and 
+rectangle. From the base shape and a member in get data to the base class to 
+initialize base data member and another function display area.*/
