@@ -11,11 +11,11 @@ data={
         'JUN':[87,54,32,9,76]
     }
 df=p.DataFrame(data)
-print(df)
+print("Read Data Into DataFrame :-\n",df)
 #Calculate Total Sell And Average Sell
 df['total_sell']=df.iloc[:,1:7].sum(axis=1)
 df['average_sell']=df.iloc[:,1:7].mean(axis=1)
-print(df)
+print("Average Sell and Total Sell :-\n",df)
 #Line Chart
 plt.figure(figsize=(10,6))
 plt.plot(df['Prod_name'],df['total_sell'],label='total_sell')
