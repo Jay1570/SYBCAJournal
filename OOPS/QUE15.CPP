@@ -13,7 +13,7 @@ class Queue
 				return;
 			}
 			if(f==-1)
-				f=n-1;
+				f=r=n-1;
 			else
 				f--;
 			dq[f]=data;

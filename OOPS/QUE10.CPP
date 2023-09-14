@@ -63,7 +63,7 @@ class Stack
 			return;
 		}
 		for(i=top;i>=0;i--)
-			cout<<s[top]<<endl;
+			cout<<s[i]<<endl;
 	}
 };
 void main()

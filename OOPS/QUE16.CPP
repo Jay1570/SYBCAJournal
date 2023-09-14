@@ -27,8 +27,6 @@ class Queue
 			}
 			r++;
 			dq[r]=data;
-			if(f==-1)
-				f++;
 		}
 		int delete_front()
 		{

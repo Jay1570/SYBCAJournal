@@ -1,8 +1,3 @@
-/*Create a class called "Vehicle" which contains data members registration
-number  and  fuel  type  Make  getdata()  function  to  input  data  value.  Create  class
-"two-Wheeler" from vehicle which contains data member's distance and mileage
-Make getdata() function to input data. Use overloading techniques for getdata()
-function and display the information with fuel used.*/
 #include<iostream.h>
 #include<conio.h>
 class Vehicle
